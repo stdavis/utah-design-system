@@ -1,0 +1,7 @@
+node_modules
+
+*storybook.log
+*.DS_Store
+ui-debug.log
+data/firebase/firebase-export-metadata.json
+firebase-debug.log

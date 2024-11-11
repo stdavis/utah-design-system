@@ -1,0 +1,93 @@
+{
+  "name": "@ugrc/utah-design-system-new",
+  "version": "1.14.0",
+  "description": "This is a collection of react components for implementing the [Utah Design System](https://designsystem.utah.gov).",
+  "keywords": [
+    "ugrc",
+    "component",
+    "esri",
+    "arcgis",
+    "react",
+    "design-system",
+    "spatial"
+  ],
+  "homepage": "https://github.com/agrc/kitchen-sink/blob/main/packages/utah-design-system/README.md",
+  "bugs": {
+    "url": "https://github.com/agrc/kitchen-sink/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agrc/kitchen-sink.git"
+  },
+  "license": "MIT",
+  "author": "ugrc developers",
+  "maintainers": [
+    {
+      "name": "Steve Gourley",
+      "email": "sgourley@utah.gov"
+    },
+    {
+      "name": "Scott Davis",
+      "email": "stdavis@utah.gov"
+    }
+  ],
+  "type": "module",
+  "main": "src/index.ts",
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "build-storybook": "storybook build",
+    "check-types": "tsc",
+    "firebase:dev": "firebase emulators:start --import ./data/firebase --only auth",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --quiet --fix",
+    "storybook": "concurrently \"npm run storybook:dev\" \"npm run firebase:dev\"",
+    "storybook:dev": "storybook dev --port 6006"
+  },
+  "dependencies": {
+    "lucide-react": "^0.456.0",
+    "react-aria-components": "^1.4.1",
+    "tailwind-merge": "^2.5.4",
+    "tailwind-variants": "^0.2.1"
+  },
+  "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.2",
+    "@storybook/addon-interactions": "^8.4.2",
+    "@storybook/blocks": "^8.4.2",
+    "@storybook/react": "^8.4.2",
+    "@storybook/react-vite": "^8.4.2",
+    "@storybook/test": "^8.4.2",
+    "@types/react": "^18.3.12",
+    "@ugrc/tailwind-preset": "^1.1.0",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.1.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "firebase": "^11.0.1",
+    "postcss": "^8.4.49",
+    "prettier": "^3.3.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "prettier-plugin-packagejson": "^2.5.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-lorem-ipsum": "^1.4.10",
+    "storybook": "^8.4.2",
+    "tailwindcss": "^3.4.14",
+    "typescript": "^5.6.3"
+  },
+  "peerDependencies": {
+    "firebase": ">=10",
+    "react": ">=18",
+    "react-dom": ">=18"
+  }
+}

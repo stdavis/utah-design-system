@@ -1,0 +1,7 @@
+__mocks__
+__snapshots__
+node_modules
+data/firebase/
+package-lock.json
+.vscode
+CHANGELOG.md

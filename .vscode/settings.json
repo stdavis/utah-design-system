@@ -1,0 +1,15 @@
+{
+  "cSpell.words": [
+    "apikey",
+    "arethetypeswrong",
+    "attw",
+    "autodocs",
+    "Gourley",
+    "lucide",
+    "oidc",
+    "packagejson",
+    "tailwindcss"
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+}
